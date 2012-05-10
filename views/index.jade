@@ -1,0 +1,21 @@
+!!!5
+html
+	head
+		title BrainPirlo
+		script(src="/js/jquery-1.7.2.js")	
+		script(src="/js/underscore.js")
+		script(src="/js/json2.js")
+		script(src="/js/backbone.js")
+		script(src="/js/app.js")
+	body
+		div#app
+			input(id="add", type="text")
+			ul#todos
+		
+			script(id="row-template", type="text/template")	
+				|<div class="view">
+				|	<input class="done" type="checkbox" <%= done ? "checked" : "" %>>
+				|	<span class="title"><%= title %></title>
+				|	<a class="destroy" href="#">[x]</a>
+				|</div>
+				|<input class="edit" type="text" value="<%= title %>">
