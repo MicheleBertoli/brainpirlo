@@ -64,6 +64,7 @@ $(function() {
 			var html = this.template(this.model.toJSON());
 			this.$el.html(html);
 			this.$(".edit").hide();
+			return this;
 		},
 		done: function() {
 			this.model.save({

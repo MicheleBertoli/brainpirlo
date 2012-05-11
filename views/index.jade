@@ -12,10 +12,10 @@ html
 			input(id="add", type="text")
 			ul#todos
 		
-			script(id="row-template", type="text/template")	
-				|<div class="view">
-				|	<input class="done" type="checkbox" <%= done ? "checked" : "" %>>
-				|	<span class="title"><%= title %></title>
-				|	<a class="destroy" href="#">[x]</a>
-				|</div>
-				|<input class="edit" type="text" value="<%= title %>">
+		script(id="row-template", type="text/template")	
+			|<div class="view">
+			|	<input class="done" type="checkbox" <%= done ? "checked" : "" %>>
+			|	<span class="title"><%= title %></span>
+			|	<a class="destroy" href="#">[x]</a>
+			|</div>
+			|<input class="edit" type="text" value="<%= title %>">
